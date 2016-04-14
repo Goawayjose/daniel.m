@@ -1,0 +1,238 @@
+body    {
+ margin: 3840px; 
+background-color: aliceblue;
+}
+
+header{
+    z-index: -20;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    overflow: hidden;
+}
+
+#blackOverlay {
+    background-size: cover;
+    padding-bottom: 100px;
+    max-width: 100%;
+    max-height: auto;
+    background-color:#000;
+    opacity:0.0;
+    position:fixed;
+    top:0;
+    min-height: 100%;
+    width: 100%;
+    height:100%;}
+
+#danny {
+    padding-left: 20px;
+    color: white;
+ position: fixed;
+font-family: 'century gothic';
+     top: 0;
+    left: 0;
+ z-index: 76;
+}
+
+.danny {
+    padding-left: 20px;
+    color: black;
+ position: fixed;
+font-family: 'century gothic';
+     top: 0;
+    left: 0;
+ z-index: 76;
+}
+
+#slider {
+    margin-top: 0px;
+    opacity: 1;
+    width: 1280px;
+    height: 720px;
+    margin: 0px, auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#slider .slides {
+  display: block;
+  width: 6400px;
+  height: 721px;
+  padding: 0;
+}
+
+#slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 1280px;
+  height: 720px;
+}
+
+.container {
+    width: auto;
+    min-width: 100%;
+    display: inline-block;
+    float: left;
+}
+
+#left   {
+    background-color: white;
+    background-size: cover;
+    font-family: 'century gothic';
+    position: relative;
+    z-index: 3;
+    width: 50%; 
+    height: 700px;;
+    margin-left: 0;
+    margin-right: 0;   
+    float: left;
+    overflow: hidden;
+}
+
+#center {
+    position: absolute;
+    font-family: 'century gothic';
+    background-color: rgb(0, 0, 0); 
+    height: 700px;
+    width: 90px; 
+    left: 50%;
+    margin: 0px, auto;
+    z-index: 4;
+    align-content: center;
+}
+
+#short_films    {
+ background-color:rgb(51, 46, 46);   
+}
+
+#travel {
+    background-color: rgb(134, 134, 134);   
+}
+
+#right  {
+    position: relative;
+    background-color: white;
+    background-size: cover;
+     width: 50%; 
+    height: 700px;
+    z-index: 3;
+    float: right;
+    overflow: hidden;
+}
+
+#nav    {
+    margin-top: 200px;
+    text-align: center;
+}
+
+#nav a {
+    color: white;
+}
+
+#nav a:hover{
+    background-color: rgb(255, 255, 255); 
+    color: black;
+}
+
+#travel a, #short_films a {
+    color: azure;
+    background-color: rgb(88, 83, 92);
+}
+
+#travel a:hover, #short_films a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+.video {
+    display: block;
+    margin-top: 40%;
+    margin-left: 0px;
+    overflow: hidden;
+}
+
+.coffee {
+ position: absolute;
+ margin-left: 750px; 
+ z-index: 1;
+}
+
+.home {
+    position: absolute;
+ z-index: 2;
+ margin-left: 750px;  
+}
+
+.babylon    {
+     position: absolute;
+ z-index: 3;
+ margin-left: 750px;  
+}
+
+
+.WrCof {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -550px; 
+    color: black;
+    font-family: 'century gothic';
+    width: 450px;
+    height: 500px;
+    z-index: 11;
+}
+
+.Wrhom {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -550px; 
+    color: black;
+    font-family: 'century gothic';
+    width: 450px;
+    height: 500px;
+    z-index: 12;
+}
+
+.Wrbab {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -550px; 
+    color: black;
+    font-family: 'century gothic';
+    width: 450px;
+    height: 500px;
+    z-index: 13;
+}
+
+#about {
+     position: absolute;
+    margin-top: 20%;
+    margin-left: -550px; 
+    color: black;
+    font-family: 'century gothic';
+    width: 450px;
+    height: 500px;
+    z-index: 14;
+}
+
+#contact {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: -550px; 
+    color: black;
+    font-family: 'century gothic';
+    width: 450px;
+    height: 500px;
+    z-index: 15;
+}
+
+p { 
+    width: 200px;
+    color:black;
+    font-size: 9px;
+    float: right;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
