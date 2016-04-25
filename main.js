@@ -1,6 +1,6 @@
 var main = function() {
-    
-    
+
+
 // nav bar
 
 $("#short_films").hide();
@@ -32,8 +32,23 @@ var coffee = $(".coffee");
 var home = $(".home");
 var babylon = $(".babylon");
 
-
 $("#coffee").click(function () {
+  coffee.toggleClass("move");
+
+  if(coffee.siblings().hasClass("move")){
+    coffee.siblings().removeClass("move");
+  }
+});
+
+$("#home").click(function () {
+  home.toggleClass("move");
+
+  if(home.siblings().hasClass("move")){
+    home.siblings().removeClass("move");
+  }
+});
+
+/* $("#coffee").click(function () {
 if( coffee.css("margin-left") === "1280px"){
     coffee.animate({"margin-left": "-=1230px"});
     if (home.css("margin-left") === "50px"){
@@ -79,7 +94,7 @@ $( ".demo" ).click(function() {
       babylon.animate({"margin-left": '+=1230px'});
     }
  });
-
+ */
 
      /*text slide*/
 var wrcof = $(".wrcof");
@@ -92,7 +107,7 @@ var thailand = $('#thailand');
 var philipines = $('#philipines');
 var sequoia = $('#sequoia');
 
-
+/*
 $("#coffee").click(function () {
 if( wrcof.css("margin-left") === "-1550px"){
     wrcof.animate({"margin-left": "+=1600px"});
@@ -443,6 +458,7 @@ $( ".thailand" ).click(function() {
     });
 
 
+*/
 
     //slider
 
@@ -492,14 +508,14 @@ var interval;
         /*darkened header*/
          $('#blackOverlay').css('opacity',wScroll/$('#blackOverlay').height());
 
-        
+
 
 
 
 
 });
-    
- 
+
+
 }
 
 $(document).ready(main);
