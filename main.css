@@ -203,20 +203,35 @@ h1 {
 
 .move {
   animation-name: moving;
-  animation-duration: 1s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
+    transform: translateX(-1230px);
 }
 
 @keyframes moving{
-  0%{transform: translatex(0px);},
+  0%{transform: translatex(0px);
+
+    },
   100%{transform: translateX(-1230px);}
 }
 
 
-.move {
-  transform: translateX(-1230px);
+.RightMove {
+  animation-name: Rightmoving;
+  animation-duration: .2s;
+  animation-fill-mode: forwards;
+    transform: translateX(1600px);
 }
 
+@keyframes Rightmoving{
+  0%{transform: translatex(0px);
+
+
+    },
+  100%{transform: translateX(1600px);
+
+    }
+}
 
 
 .home {
@@ -264,7 +279,7 @@ h1 {
     z-index: 13;
 }
 
-#philipines {
+.philipines {
     overflow: auto;
      position: absolute;
     margin-top: 10%;
@@ -275,7 +290,7 @@ h1 {
     z-index: 18;
 }
 
-#thailand{
+.thailand{
     overflow: auto;
      position: absolute;
     margin-top: 10%;
@@ -286,7 +301,7 @@ h1 {
     z-index: 17;
 }
 
-#sequoia {
+.sequoia {
     overflow: auto;
      position: absolute;
     margin-top: 10%;
@@ -297,7 +312,7 @@ h1 {
     z-index: 20;
 }
 
-#about {
+.about {
     overflow: auto;
      position: absolute;
     margin-top: 10%;
@@ -308,7 +323,7 @@ h1 {
     z-index: 14;
 }
 
-#contact {
+.contact {
     overflow: auto;
     position: absolute;
     margin-top: 10%;
@@ -397,7 +412,7 @@ and (max-device-width : 667px) {
         height: 100%;
     }
 
-    #about {
+    .about {
         height: 100%;
     }
 
@@ -490,12 +505,12 @@ and (max-device-width : 667px) {
         padding-bottom: 0px;
     }
 
-    #about {
+    .about {
         height: 85%;
         width: 85%;
     }
 
-    #contact {
+    .contact {
         height: 85%;
         width: 85%;
     }

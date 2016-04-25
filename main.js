@@ -23,7 +23,17 @@ $('.travel').hover(function()  {
     $("#short_films").slideUp(1000);
 });
 
+var video = $(".video");
 
+var wrcof = $(".wrcof");
+var wrhom = $(".wrhom");
+var wrbab = $(".wrbabylon");
+var about = $(".about");
+var Contact = $(".contact");
+var demo = $(".Wrdemo");
+var thailand = $('.thailand');
+var philipines = $('.philipines');
+var sequoia = $(".sequoia");
 
 // video slide
 
@@ -32,435 +42,102 @@ var coffee = $(".coffee");
 var home = $(".home");
 var babylon = $(".babylon");
 
+
+
+
+$("#demo").click(function () {
+  demo.toggleClass("RightMove");
+
+  if(demo.siblings().hasClass("RightMove")){
+    demo.siblings().removeClass("RightMove");
+  }
+  if(video.children().hasClass("move")){
+    video.children().removeClass("move");
+  }
+});
+
 $("#coffee").click(function () {
   coffee.toggleClass("move");
+  wrcof.toggleClass("RightMove");
 
   if(coffee.siblings().hasClass("move")){
     coffee.siblings().removeClass("move");
+  }
+  if(wrcof.siblings().hasClass("RightMove")){
+    wrcof.siblings().removeClass("RightMove");
   }
 });
 
 $("#home").click(function () {
   home.toggleClass("move");
+  wrhom.toggleClass("RightMove");
 
   if(home.siblings().hasClass("move")){
     home.siblings().removeClass("move");
   }
+  if(wrhom.siblings().hasClass("RightMove")){
+    wrhom.siblings().removeClass("RightMove");
+  }
 });
 
-/* $("#coffee").click(function () {
-if( coffee.css("margin-left") === "1280px"){
-    coffee.animate({"margin-left": "-=1230px"});
-    if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
-    }
-    if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
-    }
-}
-     else {
-      coffee.animate({"margin-left": '+=1230px'});     }
+$("#thailand").click(function () {
+  thailand.toggleClass("RightMove");
+
+  if(thailand.siblings().hasClass("RightMove")){
+    thailand.siblings().removeClass("RightMove");
+  }
+  if(video.children().hasClass("move")){
+    video.children().removeClass("move");
+  }
 });
 
-$( "#home" ).click(function() {
-    if( home.css("margin-left") === "1280px"){
-      home.animate({"margin-left": "-=1230px"});
+$("#philipines").click(function () {
+  philipines.toggleClass("RightMove");
 
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
- }
-    }
-    else {
-      home.animate({"margin-left": '+=1230px'});
-    }
-  });
-
-$( ".demo" ).click(function() {
-    if( babylon.css("margin-left") === "1280px")
-    {
-      babylon.animate({"margin-left": "-=1230px"});
-
-        if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
- }
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-    }
-    else {
-      babylon.animate({"margin-left": '+=1230px'});
-    }
- });
- */
-
-     /*text slide*/
-var wrcof = $(".wrcof");
-var wrhom = $(".wrhom");
-var wrbab = $(".wrbabylon");
-var wrabo = $("#about");
-var wrcon = $("#contact");
-var wrdemo = $(".Wrdemo");
-var thailand = $('#thailand');
-var philipines = $('#philipines');
-var sequoia = $('#sequoia');
-
-/*
-$("#coffee").click(function () {
-if( wrcof.css("margin-left") === "-1550px"){
-    wrcof.animate({"margin-left": "+=1600px"});
-    if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '-=1600px'});
-    }
-    if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
-    }
-       if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-    if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
-     if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-    if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
-    }
-        if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-}
-     else {
-      wrcof.animate({"margin-left": '-=1600px'});     }
+  if(philipines.siblings().hasClass("RightMove")){
+    philipines.siblings().removeClass("RightMove");
+  }
+  if(video.children().hasClass("move")){
+    video.children().removeClass("move");
+  }
 });
 
-$( "#home" ).click(function() {
-    if( wrhom.css("margin-left") === "-1550px"){
-      wrhom.animate({"margin-left": "+=1600px"});
 
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '-=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
- }
-           if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-        if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
-        if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-        if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
-    }
-        if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-    }
-    else {
-      wrhom.animate({"margin-left": '-=1600px'});
-    }
-  });
+$("#sequoia").click(function () {
+  sequoia.toggleClass("RightMove");
+
+  if(sequoia.siblings().hasClass("RightMove")){
+    sequoia.siblings().removeClass("RightMove");
+  }
+  if(video.children().hasClass("move")){
+    video.children().removeClass("move");
+  }
+});
 
 
-    $( ".about" ).click(function() {
-    if( wrabo.css("margin-left") === "-1550px"){
-      wrabo.animate({"margin-left": "+=1600px"});
 
-        if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '-=1600px'});
- }
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '-=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
- }
-        if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
+$("#about").click(function () {
+  about.toggleClass("RightMove");
 
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1600px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1600px'});
- }
-         if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1600px'});
- }
-         if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-        if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
-    }
-        if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-    }
-    else {
-      wrabo.animate({"margin-left": '-=1600px'});
-    }
-  });
-
-    $( ".contact" ).click(function() {
-    if( wrcon.css("margin-left") === "-1550px"){
-
-      wrcon.animate({"margin-left": "+=1600px"});
-
-        if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '+=1600px'});
- }
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '+=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '+=1600px'});
- }
-        if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
- }
-         if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
- }
-          if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-        if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
-    }
-        if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-    }
+  if(about.siblings().hasClass("RightMove")){
+    about.siblings().removeClass("RightMove");
+  }
+  if(about.children().hasClass("move")){
+about.children().removeClass("move");
+  }
+});
 
 
-    else {
-      wrcon.animate({"margin-left": '-=1600px'});
-    }
+$("#contact").click(function () {
+  Contact.toggleClass("RightMove");
 
-    });
-
-$( ".demo" ).click(function() {
-    if( wrdemo.css("margin-left") === "-1550px"){
-
-      wrdemo.animate({"margin-left": "+=1600px"});
-
-        if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '-=1600px'});
- }
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '-=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
- }
-        if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
- }
-         if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
- }
-        if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
-
-         if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
-    }
-        if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-    }
-
-    else {
-      wrdemo.animate({"margin-left": '-=1600px'});
-    }
-
-    });
-
-
-$( ".thailand" ).click(function() {
-    if( thailand.css("margin-left") === "-1550px"){
-
-      thailand.animate({"margin-left": "+=1600px"});
-
-        if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '-=1600px'});
- }
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '-=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
- }
-        if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
- }
-         if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
- }
-          if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-          if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
- }
-         if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-        if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
-    }
-
-    else {
-      thailand.animate({"margin-left": '-=1600px'});
-    }
-
-    });
-
-        $( ".philipines" ).click(function() {
-    if( philipines.css("margin-left") === "-1550px"){
-
-      philipines.animate({"margin-left": "+=1600px"});
-
-        if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '-=1600px'});
- }
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '-=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
- }
-        if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
- }
-         if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
- }
-          if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-           if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (sequoia.css("margin-left") === "50px"){
-    sequoia.animate({"margin-left": '-=1600px'});
- }
-        if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
-    }
-
-    else {
-      philipines.animate({"margin-left": '-=1600px'});
-    }
-
-    });
-
-        $( ".sequoia" ).click(function() {
-    if( sequoia.css("margin-left") === "-1550px"){
-
-      sequoia.animate({"margin-left": "+=1600px"});
-
-        if (wrhom.css("margin-left") === "50px"){
-    wrhom.animate({"margin-left": '-=1600px'});
- }
-        if (wrcof.css("margin-left") === "50px"){
-    wrcof.animate({"margin-left": '-=1600px'});
- }
-        if (wrbab.css("margin-left") === "50px"){
-    wrbab.animate({"margin-left": '-=1600px'});
- }
-        if (wrabo.css("margin-left") === "50px"){
-    wrabo.animate({"margin-left": '-=1600px'});
- }
-
-        if (coffee.css("margin-left") === "50px"){
-    coffee.animate({"margin-left": '+=1230px'});
- }
-        if (babylon.css("margin-left") === "50px"){
-    babylon.animate({"margin-left": '+=1230px'});
- }
-         if (home.css("margin-left") === "50px"){
-    home.animate({"margin-left": '+=1230px'});
- }
-          if (wrdemo.css("margin-left") === "50px"){
-    wrdemo.animate({"margin-left": '-=1600px'});
- }
-         if (thailand.css("margin-left") === "50px"){
-    thailand.animate({"margin-left": '-=1600px'});
- }
-         if (philipines.css("margin-left") === "50px"){
-    philipines.animate({"margin-left": '-=1600px'});
- }
-        if (wrcon.css("margin-left") === "50px"){
-    wrcon.animate({"margin-left": '-=1600px'});
- }
-    }
-
-    else {
-      sequoia.animate({"margin-left": '-=1600px'});
-    }
-
-    });
-
-
-*/
-
-    //slider
+  if(Contact.siblings().hasClass("RightMove")){
+    Contact.siblings().removeClass("RightMove");
+  }
+  if(video.children().hasClass("move")){
+    video.children().removeClass("move");
+  }
+});
 
 
   $(function(){
