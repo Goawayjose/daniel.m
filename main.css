@@ -59,6 +59,11 @@ font-family: 'quicksand', sans-serif;
     margin: 0px, auto;
     overflow: hidden;
     z-index: 1;
+    position: absolute;
+    left: 50%;
+    margin-left: -640px;
+    top: 50%;
+    margin-top: -360px;
 }
 
 #slider .slides {
@@ -81,12 +86,14 @@ font-family: 'quicksand', sans-serif;
 
 
 .container {
-  height: 100vh;
+    height: 100vh;
     background-color: white;
     width: auto;
     min-width: 100%;
     display: inline-block;
     float: left;
+    min-height: 1200px;
+    background-color: white !important;
 }
 
 #left   {
@@ -101,6 +108,22 @@ font-family: 'quicksand', sans-serif;
     margin-right: 0;
     float: left;
     overflow: hidden;
+    min-height: 1200px;
+    padding-top: 100px;
+}
+
+#right  {
+     position: relative;
+    background-color: white;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    z-index: 3;
+    float: right;
+    overflow: hidden;
+    margin-right: -20px;
+    min-height: 1200px;
+    padding-top: 50px;
 }
 
 #center {
@@ -115,6 +138,7 @@ font-family: 'quicksand', sans-serif;
     z-index: 4;
     align-content: center;
     padding-bottom: 20px;
+    min-height: 1200px;
 }
 
 #short_films    {
@@ -125,17 +149,7 @@ font-family: 'quicksand', sans-serif;
     background-color: rgb(134, 134, 134);
 }
 
-#right  {
-     position: relative;
-    background-color: white;
-    background-size: cover;
-    width: 50%;
-    height: 100vh;
-    z-index: 3;
-    float: right;
-    overflow: hidden;
-    margin-right: -20px;
-}
+
 
 button {
     background-color: black;
@@ -155,7 +169,8 @@ span {
 nav    {
 
     position: relative;
-    margin-top: 200px;
+    top: 50%;
+    margin-top: -163px;
     text-align: center;
 }
 
@@ -187,38 +202,42 @@ h1 {
 }
 
 .video {
+
     display: block;
-    margin-top: 40%;
     margin-left: 0px;
     overflow: hidden;
 }
 
 .coffee {
+padding-top: 100px;
   position: absolute;
- margin-left: 1280px;
  z-index: 1;
+ margin-left: 1280px;
+ margin-top: -141px;
+ top:50%;
 }
 
 
 
 .move {
   animation-name: moving;
-  animation-duration: .2s;
+  animation-duration: .8s;
   animation-fill-mode: forwards;
-    transform: translateX(-1230px);
+  right: 60px;
 }
 
 @keyframes moving{
-  0%{transform: translatex(0px);
+  0%{right: -500px;;
 
     },
-  100%{transform: translateX(-1230px);}
+  100%{right: 60px;}
 }
 
 
 .RightMove {
+  height: 85%;
   animation-name: Rightmoving;
-  animation-duration: .2s;
+  animation-duration: .8s;
   animation-fill-mode: forwards;
     transform: translateX(1600px);
 }
@@ -235,9 +254,12 @@ h1 {
 
 
 .home {
-    position: absolute;
+
+position: absolute;
  z-index: 2;
  margin-left: 1280px;
+ margin-top: -141px;
+ top:50%;
 }
 
 .babylon    {
@@ -252,8 +274,9 @@ h1 {
     margin-top: -10%;
     margin-left: -1550px;
     color: black;
-    width: 550px;
     height: 100%;
+    width: 85%;
+    padding-bottom: 0px;
     z-index: 11;
 }
 
@@ -263,9 +286,10 @@ h1 {
     position: absolute;
     margin-top: -10%;
     margin-left: -1550px;
-    width: 550px;
     height: 100%;
     z-index: 12;
+    width: 85%;
+    padding-bottom: 0px;
 }
 
 .Wrdemo {
@@ -318,9 +342,9 @@ h1 {
     margin-top: 10%;
     margin-left: -1550px;
     color: black;
-    width: 500px;
-    height: 500px;
     z-index: 14;
+    height: 85%;
+    width: 85%;
 }
 
 .contact {
@@ -329,8 +353,8 @@ h1 {
     margin-top: 10%;
     margin-left: -1550px;
     color: black;
-    width: 500px;
-    height: 500px;
+    height: 85%;
+    width: 85%;
     z-index: 15;
 }
 
@@ -356,162 +380,4 @@ p {
     font-size: 20px;
     font-family: 'work sans';
     font-weight: 200;
-}
-
-/* iphone test */
-
-@media only screen
-and (min-device-width : 375px)
-and (max-device-width : 667px) {
-
-     span {
-        margin-top: -2px;
-        margin-right: -10px;
-        background-color: black;
-    }
-
-    #center {
-        height: 100%;
-        left: 50%;
-        margin-left: 180px;
-        float: right;
-        margin-right: 0px !important;
-        background-color:rgb(183,200,190);
-        border-radius: 30px;
-        width: 50px;
-        height: 50px;
-    }
-
-    nav {
-        font-size: 36px;
-        width: 300px;
-        background-color: black;
-        margin-top: 0px;
-    }
-
-    #left {
-        padding-top: 60px;
-        height: 400px;
-        width: 100%;
-        margin: 30px;
-    }
-
-    #right {
-         width: 100%;
-        margin: 20px;
-        clear: right;
-        float: left;
-        height: 100%;
-    }
-
-    .video {
-        margin-top: 0px;
-    }
-
-    .Wrhom, .WrCof {
-        height: 100%;
-    }
-
-    .about {
-        height: 100%;
-    }
-
-}
-
-/* Landscape phones and smaller*/
-@media (max-width: 480px) {
-
-    .row #left {
-        background-color: black !important;
-    }
-
-
-    span {
-        margin-top: -2px;
-        margin-right: -10px;
-        background-color: black;
-    }
-
-    #center {
-        background-color:rgb(183,200,190);
-        border-radius: 30px;
-        width: 50px;
-        height: 50px;
-    }
-
-    nav {
-        width: 200px;
-        background-color: black;
-        margin-top: 0px;
-    }
-
-    #left {
-        height: 400px;
-        width: 100%;
-        margin: 30px;
-    }
-
-    #right {
-         width: 100%;
-        margin: 20px;
-        clear: right;
-        float: left;
-    }
-
-    .video {
-        margin-top: 0px;
-    }
-}
-
-
-
-
-
-/* LARGE DESKTOP */
-@media (min-width: 1224px) {
-
-
-    #slider{
-        position: absolute;
-        left: 50%;
-        margin-left: -600px;
-        top: 50%;
-        margin-top: -300px;
-    }
-
-    #left{
-        min-height: 1200px;
-        padding-top: 100px;
-    }
-    #center{
-        min-height: 1200px;
-        padding-top: 200px;
-
-    }
-
-    #right{
-        min-height: 1200px;
-        padding-top: 100px;
-
-    }
-
-    .container {
-        min-height: 1200px;
-        background-color: white !important;
-    }
-
-    .Wrcof, .Wrhom{
-        width: 85%;
-        padding-bottom: 0px;
-    }
-
-    .about {
-        height: 85%;
-        width: 85%;
-    }
-
-    .contact {
-        height: 85%;
-        width: 85%;
-    }
 }
