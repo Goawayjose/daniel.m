@@ -16,11 +16,11 @@ background-color: black;
 }
 
 #blackOverlay {
-
+    z-index: 2;
     background-size: cover;
     padding-bottom: 100px;
     background-color:#000;
-    position: fixed;
+    position: absolute;
     opacity:0.0;
     top:0;
     max-width: 100%;
@@ -209,7 +209,7 @@ h1 {
 }
 
 .coffee {
-padding-top: 100px;
+
   position: absolute;
  z-index: 1;
  margin-left: 1280px;
@@ -284,7 +284,7 @@ position: absolute;
     font-size: 48px;
     overflow: auto;
     position: absolute;
-    margin-top: -10%;
+    margin-top: -25px;
     margin-left: -1550px;
     height: 100%;
     z-index: 12;
@@ -377,7 +377,7 @@ p {
 }
 
 #right h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'work sans';
     font-weight: 200;
 }
