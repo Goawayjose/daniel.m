@@ -121,7 +121,7 @@ font-family: 'quicksand', sans-serif;
     z-index: 3;
     float: right;
     overflow: hidden;
-    margin-right: -20px;
+    margin-right: 0px;
     min-height: 1200px;
     padding-top: 50px;
 }
@@ -140,6 +140,11 @@ font-family: 'quicksand', sans-serif;
     padding-bottom: 20px;
     min-height: 1200px;
 }
+
+.collapse {
+    display: block !important;
+}
+
 
 #short_films    {
  background-color:rgb(51, 46, 46);
@@ -176,8 +181,15 @@ nav    {
 
 #nav a {
 
-    padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 16px;
+padding-left: 17px;
+    color: white;
+}
+
+#philipines a {
+
+  padding-right: 16px;
+padding-left: 10px;
     color: white;
 }
 
@@ -239,7 +251,7 @@ h1 {
   animation-name: Rightmoving;
   animation-duration: .8s;
   animation-fill-mode: forwards;
-    transform: translateX(1600px);
+    transform: translateX(1620px);
 }
 
 @keyframes Rightmoving{
@@ -247,10 +259,20 @@ h1 {
 
 
     },
-  100%{transform: translateX(1600px);
+  100%{transform: translateX(1620px);
 
     }
 }
+/**********/
+
+
+
+
+
+
+
+
+/**********/
 
 
 .home {
@@ -268,29 +290,25 @@ position: absolute;
  margin-left: 1280px;
 }
 
-.WrCof {
-    overflow: auto;
-    position: absolute;
-    margin-top: -10%;
-    margin-left: -1550px;
-    color: black;
-    height: 100%;
-    width: 85%;
-    padding-bottom: 0px;
-    z-index: 11;
+.Wrhom {
+  z-index: 11;
+}
+.WrCof  {
+  z-index: 12;
 }
 
-.Wrhom {
+.Wrhom,
+.WrCof {
     font-size: 48px;
     overflow: auto;
     position: absolute;
     margin-top: -25px;
     margin-left: -1550px;
     height: 100%;
-    z-index: 12;
     width: 85%;
     padding-bottom: 0px;
 }
+
 
 .Wrdemo {
     overflow: auto;
@@ -380,4 +398,201 @@ p {
     font-size: 16px;
     font-family: 'work sans';
     font-weight: 200;
+}
+
+@media all and (max-width: 990px) {
+
+.container {
+  height: auto;
+}
+
+  #left {
+    background-color: white;;
+background-size: cover;
+font-family: 'century gothic';
+position: relative;
+z-index: 3;
+width: 100%;
+height: 500px;
+margin-top: 100px;
+margin-left: -161px;
+margin-right: 0;
+float: none;
+overflow: hidden;
+padding-top: 100px;
+min-height: initial;
+  }
+
+  #right {
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    width: 95%;
+    height: 100vh;
+    z-index: 3;
+    float: right;
+    overflow: hidden;
+    margin-right: 0px;
+  min-height: 400px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+  #nav a {
+      padding-right: 15px;
+      padding-left: 15px;
+      color: white;
+      font-size: 75px;
+      margin-bottom: 20px;
+      border-bottom: 1px white solid;
+  }
+
+  nav {
+    position: relative;
+        margin-top: 20px;
+    text-align: center !important;
+}
+
+#danny {
+  background: rgba(255, 255, 255, 0.7);
+      font-size: 36px;
+      color: black !important;
+      z-index: 99;
+      top: -8;
+      width: 100%;
+      border-bottom: 8px solid black;
+      border-top: 8px solid white;
+}
+
+.header {
+    margin-top: 57px;
+    z-index: -20;
+    position: relative;
+    min-width: 100% !important;
+    height: 600px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.collapse{
+  display: block !important;
+}
+
+
+#hamburger {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transition: 0.3s;
+}
+
+#hamburger span {
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -47px;
+      height: 15;
+      width: 100px;
+      border: 0.25rem solid black;
+      border-radius: 0;
+      margin-top: -6px;
+      transition: 0.3s;
+      background-color: black;
+}
+
+#hamburger.open span {
+  top: 43px;
+left: 43px;
+  height: 100px;
+  background-color: white;
+  margin: -1.875rem 0 0 -1.875rem;
+  border-width: 0.375rem;
+
+}
+
+#hamburger span:before,
+ #hamburger span:after {
+   content: '';
+ position: absolute;
+ left: -3px;
+ width: 100px;
+ height: 15px;
+ background: black;
+ border-radius: 0;
+ margin: -50 0 0 0rem;
+ transition: 0.3s;
+
+}
+
+#hamburger.open span:before,
+#hamburger.open span:after {
+  width: 100px;
+  margin: 0 0 0 0;
+  top: 40px;
+}
+
+#hamburger span:before {
+    top: 85px;
+}
+
+#hamburger.open span:before {
+  transform: rotate(-135deg);
+}
+
+#hamburger span:after {
+  top: 11px;
+}
+
+#hamburger.open span:after {
+  transform: rotate(135deg);
+}
+
+.icon-bar {
+
+}
+
+#center{
+  display: none;
+    top: 0;
+    margin-top: 60px;
+    position: fixed;
+    font-family: 'quicksand', sans-serif;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100vw;
+    left: 10px;
+    margin-left: 0;
+    margin: 14px, auto;
+    z-index: 4;
+    align-content: center;
+    padding-bottom: 20px;
+    min-height: 0px;
+}
+
+
+
+.navbar-header {
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    border: 4px solid black;
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    display: block;
+    z-index: 99;
+}
+
+
+.navbar-header span {
+  background-color:green;
+  position: relative;
+  height: 20px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+
 }

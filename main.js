@@ -47,7 +47,7 @@ var babylon = $(".babylon");
 
 $("#demo").click(function () {
   demo.toggleClass("RightMove");
-
+$('#center').toggleClass('collapse');
   if(demo.siblings().hasClass("RightMove")){
     demo.siblings().removeClass("RightMove");
   }
@@ -57,6 +57,7 @@ $("#demo").click(function () {
 });
 
 $("#coffee").click(function () {
+  $('#center').toggleClass('collapse');
   coffee.toggleClass("move");
   wrcof.toggleClass("RightMove");
 
@@ -71,6 +72,7 @@ $("#coffee").click(function () {
 $("#home").click(function () {
   home.toggleClass("move");
   wrhom.toggleClass("RightMove");
+  $('#center').toggleClass('collapse');
 
   if(home.siblings().hasClass("move")){
     home.siblings().removeClass("move");
@@ -82,7 +84,7 @@ $("#home").click(function () {
 
 $("#thailand").click(function () {
   thailand.toggleClass("RightMove");
-
+$('#center').toggleClass('collapse');
   if(thailand.siblings().hasClass("RightMove")){
     thailand.siblings().removeClass("RightMove");
   }
@@ -93,7 +95,7 @@ $("#thailand").click(function () {
 
 $("#philipines").click(function () {
   philipines.toggleClass("RightMove");
-
+$('#center').toggleClass('collapse');
   if(philipines.siblings().hasClass("RightMove")){
     philipines.siblings().removeClass("RightMove");
   }
@@ -105,7 +107,7 @@ $("#philipines").click(function () {
 
 $("#sequoia").click(function () {
   sequoia.toggleClass("RightMove");
-
+$('#center').toggleClass('collapse');
   if(sequoia.siblings().hasClass("RightMove")){
     sequoia.siblings().removeClass("RightMove");
   }
@@ -118,7 +120,7 @@ $("#sequoia").click(function () {
 
 $("#about").click(function () {
   about.toggleClass("RightMove");
-
+$('#center').toggleClass('collapse');
   if(about.siblings().hasClass("RightMove")){
     about.siblings().removeClass("RightMove");
   }
@@ -130,7 +132,7 @@ about.children().removeClass("move");
 
 $("#contact").click(function () {
   Contact.toggleClass("RightMove");
-
+$('#center').toggleClass('collapse');
   if(Contact.siblings().hasClass("RightMove")){
     Contact.siblings().removeClass("RightMove");
   }
@@ -191,6 +193,14 @@ var interval;
 
 
 });
+
+
+
+
+	$('#hamburger').click(function(){
+		$(this).toggleClass('open');
+    $('#center').toggleClass('collapse');
+	});
 
 
 }
