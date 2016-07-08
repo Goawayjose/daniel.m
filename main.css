@@ -1,26 +1,26 @@
 * {
-    margin-right: 0px;
+    margin: 0;
 }
 
 body    {
- margin: 3840px; 
+ margin: 3840px;
 background-color: black;
 }
 
 .header{
     z-index: -20;
-    max-width: 100%;
-    height: auto;
+    min-width: 100% !important;
+    height: 100vh;
     background-color: black;
     overflow: hidden;
 }
 
 #blackOverlay {
-   
+    z-index: 2;
     background-size: cover;
     padding-bottom: 100px;
     background-color:#000;
-    position: fixed;
+    position: absolute;
     opacity:0.0;
     top:0;
     max-width: 100%;
@@ -59,6 +59,11 @@ font-family: 'quicksand', sans-serif;
     margin: 0px, auto;
     overflow: hidden;
     z-index: 1;
+    position: absolute;
+    left: 50%;
+    margin-left: -640px;
+    top: 50%;
+    margin-top: -360px;
 }
 
 #slider .slides {
@@ -81,11 +86,14 @@ font-family: 'quicksand', sans-serif;
 
 
 .container {
+    height: 100vh;
     background-color: white;
     width: auto;
     min-width: 100%;
     display: inline-block;
     float: left;
+    min-height: 1200px;
+    background-color: white !important;
 }
 
 #left   {
@@ -95,32 +103,13 @@ font-family: 'quicksand', sans-serif;
     position: relative;
     z-index: 3;
     width: 50%;
-    height: 700px;
+    height: 100vh;
     margin-left: -20px;
     margin-right: 0;
     float: left;
     overflow: hidden;
-}
-
-#center {
-     position: absolute;
-    font-family: 'quicksand', sans-serif;
-    background-color: rgb(0, 0, 0);
-    height: 700px;
-    width: 90px;
-    left: 50%;
-    margin-left: -45px;
-    margin: 14px, auto;
-    z-index: 4;
-    align-content: center;
-}
-
-#short_films    {
- background-color:rgb(51, 46, 46);   
-}
-
-#travel {
-    background-color: rgb(134, 134, 134);   
+    min-height: 1200px;
+    padding-top: 100px;
 }
 
 #right  {
@@ -128,12 +117,44 @@ font-family: 'quicksand', sans-serif;
     background-color: white;
     background-size: cover;
     width: 50%;
-    height: 700px;
+    height: 100vh;
     z-index: 3;
     float: right;
     overflow: hidden;
-    margin-right: -20px;
+    margin-right: 0px;
+    min-height: 1200px;
+    padding-top: 50px;
 }
+
+#center {
+     position: absolute;
+    font-family: 'quicksand', sans-serif;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 90px;
+    left: 50%;
+    margin-left: -45px;
+    margin: 14px, auto;
+    z-index: 4;
+    align-content: center;
+    padding-bottom: 20px;
+    min-height: 1200px;
+}
+
+.collapse {
+    display: block !important;
+}
+
+
+#short_films    {
+ background-color:rgb(51, 46, 46);
+}
+
+#travel {
+    background-color: rgb(134, 134, 134);
+}
+
+
 
 button {
     background-color: black;
@@ -151,22 +172,30 @@ span {
 
 
 nav    {
-    
+
     position: relative;
-    margin-top: 200px;
+    top: 50%;
+    margin-top: -163px;
     text-align: center;
 }
 
 #nav a {
-  
-    padding-right: 15px;
-    padding-left: 15px;
+
+  padding-right: 16px;
+padding-left: 17px;
+    color: white;
+}
+
+#philipines a {
+
+  padding-right: 16px;
+padding-left: 10px;
     color: white;
 }
 
 #nav a:hover{
     cursor: pointer;
-    background-color: rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
     color: black;
 }
 
@@ -185,122 +214,170 @@ h1 {
 }
 
 .video {
+
     display: block;
-    margin-top: 40%;
     margin-left: 0px;
     overflow: hidden;
 }
 
 .coffee {
- position: absolute;
- margin-left: 1280px; 
+
+  position: absolute;
  z-index: 1;
+ margin-left: 1280px;
+ margin-top: -141px;
+ top:50%;
 }
 
 
 
+.move {
+  animation-name: moving;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+  right: 60px;
+}
+
+@keyframes moving{
+  0%{right: -500px;;
+
+    },
+  100%{right: 60px;}
+}
+
+
+.RightMove {
+  height: 85%;
+  animation-name: Rightmoving;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
+    transform: translateX(1620px);
+}
+
+@keyframes Rightmoving{
+  0%{transform: translatex(0px);
+
+
+    },
+  100%{transform: translateX(1620px);
+
+    }
+}
+/**********/
+
+
+
+
+
+
+
+
+/**********/
+
 
 .home {
-    position: absolute;
+
+position: absolute;
  z-index: 2;
- margin-left: 1280px;  
+ margin-left: 1280px;
+ margin-top: -141px;
+ top:50%;
 }
 
 .babylon    {
      position: absolute;
  z-index: 3;
- margin-left: 1280px;  
-}
-
-.WrCof {
-    overflow: auto;
-    position: absolute;
-    margin-top: 10%;
-    margin-left: -1550px; 
-    color: black;
-    width: 550px;
-    height: 600px;
-    z-index: 11;
+ margin-left: 1280px;
 }
 
 .Wrhom {
+  margin-top: -50px !important;
+  z-index: 11;
+}
+.WrCof  {
+  z-index: 12;
+}
+
+.Wrhom,
+.WrCof {
     font-size: 48px;
     overflow: auto;
     position: absolute;
-    margin-top: 10%;
-    margin-left: -1550px; 
-    width: 550px;
-    height: 500px;
-    z-index: 12;
+    margin-top: -25px;
+    margin-left: -1550px;
+    height: 100%;
+    width: 85%;
+    padding-bottom: 0px;
 }
+
 
 .Wrdemo {
     overflow: auto;
     position: absolute;
     margin-top: 10%;
-    margin-left: -1550px; 
+    margin-left: -1550px;
     color: black;
     width: 500px;
     height: 500px;
     z-index: 13;
 }
 
-#philipines {
+.philipines {
     overflow: auto;
      position: absolute;
     margin-top: 10%;
-    margin-left: -1550px; 
+    margin-left: -1550px;
     color: black;
     width: 450px;
     height: 500px;
     z-index: 18;
 }
 
-#thailand{
+.thailand{
     overflow: auto;
      position: absolute;
     margin-top: 10%;
-    margin-left: -1550px; 
+    margin-left: -1550px;
     color: black;
     width: 450px;
     height: 500px;
     z-index: 17;
 }
 
-#sequoia {
+.sequoia {
     overflow: auto;
      position: absolute;
     margin-top: 10%;
-    margin-left: -1550px; 
+    margin-left: -1550px;
     color: black;
     width: 450px;
     height: 500px;
     z-index: 20;
 }
 
-#about {
+.about {
     overflow: auto;
      position: absolute;
     margin-top: 10%;
-    margin-left: -1550px; 
+    margin-left: -1550px;
     color: black;
-    width: 500px;
-    height: 500px;
     z-index: 14;
+    height: 85%;
+    width: 85%;
 }
 
-#contact {
+.contact {
     overflow: auto;
     position: absolute;
     margin-top: 10%;
-    margin-left: -1550px; 
+    margin-left: -1550px;
     color: black;
-    width: 500px;
-    height: 500px;
+    height: 85%;
+    width: 85%;
     z-index: 15;
 }
 
-p { 
+p {
     width: 200px;
     color:black;
     font-size: 9px;
@@ -314,218 +391,214 @@ p {
 #right h1 {
     font-size: 80px;
     color: rgb(64, 64,64);
-    font-family: 'quicksand', sans-serif; 
-    
+    font-family: 'quicksand', sans-serif;
+
 }
 
 #right h3 {
-    font-size: 20px;
+  margin-top: 10px;
+    font-size: 16px;
     font-family: 'work sans';
     font-weight: 200;
 }
 
-/* iphone test */
+@media all and (max-width: 990px) {
 
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) { 
-    
-     span {
-        margin-top: -2px;
-        margin-right: -10px;
-        background-color: black;    
-    }
-    
-    #center {
-        height: 100%;
-        left: 50%;
-        margin-left: 180px;
-        float: right;
-        margin-right: 0px !important;
-        background-color:rgb(183,200,190);
-        border-radius: 30px;
-        width: 50px;
-        height: 50px;
-    }
-    
-    nav {
-        font-size: 36px;
-        width: 300px;
-        background-color: black;
-        margin-top: 0px;
-    }
-    
-    #left {
-        padding-top: 60px;
-        height: 400px;
-        width: 100%;
-        margin: 30px;
-    }
-    
-    #right {
-         width: 100%;
-        margin: 20px;
-        clear: right;
-        float: left;
-        height: 100%;
-    }
-    
-    .video {
-        margin-top: 0px;
-    }
-    
-    .Wrhom, .WrCof {
-        height: 100%;
-    }
-    
-    #about {
-        height: 100%;
-    }
-
+.container {
+  height: auto;
 }
 
-/* Landscape phones and smaller*/
-@media (max-width: 480px) {
-        
-    .row #left {
-        background-color: black !important;
-    }
-    
-        
-    span {
-        margin-top: -2px;
-        margin-right: -10px;
-        background-color: black;    
-    }
-    
-    #center {
-        background-color:rgb(183,200,190);
-        border-radius: 30px;
-        width: 50px;
-        height: 50px;
-    }
-    
-    nav {
-        width: 200px;
-        background-color: black;
-        margin-top: 0px;
-    }
-    
-    #left {
-        height: 400px;
-        width: 100%;
-        margin: 30px;
-    }
-    
-    #right {
-         width: 100%;
-        margin: 20px;
-        clear: right;
-        float: left;
-    }
-    
-    .video {
-        margin-top: 0px;
-    }
+  #left {
+    background-color: white;;
+background-size: cover;
+font-family: 'century gothic';
+position: relative;
+z-index: 3;
+width: 100%;
+height: 500px;
+margin-top: 100px;
+margin-left: -161px;
+margin-right: 0;
+float: none;
+overflow: hidden;
+padding-top: 100px;
+min-height: initial;
+  }
+
+  #right {
+    position: relative;
+    background-color: white;
+    background-size: cover;
+    width: 95%;
+    height: 100vh;
+    z-index: 3;
+    float: right;
+    overflow: hidden;
+    margin-right: 0px;
+  min-height: 400px;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+  #nav a {
+      padding-right: 15px;
+      padding-left: 15px;
+      color: white;
+      font-size: 75px;
+      margin-bottom: 20px;
+      border-bottom: 1px white solid;
+  }
+
+  nav {
+    position: relative;
+        margin-top: 20px;
+    text-align: center !important;
+}
+
+#danny {
+  background: rgba(255, 255, 255, 0.7);
+      font-size: 36px;
+      color: black !important;
+      z-index: 99;
+      top: -8;
+      width: 100%;
+      border-bottom: 8px solid black;
+      border-top: 8px solid white;
+}
+
+.header {
+    margin-top: 57px;
+    z-index: -20;
+    position: relative;
+    min-width: 100% !important;
+    height: 600px;
+    background-color: black;
+    overflow: hidden;
+}
+
+.collapse{
+  display: block !important;
 }
 
 
-/* portrait Tablets*/
-@media (max-width: 767px) {
-
-    
-    span {
-        margin-top: -2px;
-        margin-right: -10px;
-        background-color: black;    
-    }
-    
-    #center {
-        background-color:rgb(183,200,190);
-        border-radius: 30px;
-        width: 50px;
-        height: 50px;
-    }
-    
-    nav {
-        width: 200px;
-        background-color: black;
-        margin-top: 0px;
-    }
-    
-    #left {
-        height: 300px;
-        width: 100%;
-        margin: 30px;
-    }
-    
-    #right {
-         width: 100%;
-        margin: 20px;
-        clear: right;
-        float: left;
-    }
-    
-    .video {
-        margin-top: 0px;
-    }
+#hamburger {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    transition: 0.3s;
 }
 
-/* Landscape Tablets*/
-@media(min-width: 768px;) AND (max-width: 979px) {
-        
-    
+#hamburger span {
+  position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -47px;
+      height: 15;
+      width: 100px;
+      border: 0.25rem solid black;
+      border-radius: 0;
+      margin-top: -6px;
+      transition: 0.3s;
+      background-color: black;
 }
 
-/* LARGE DESKTOP */
-@media (min-width: 1200px) {
-    .header {
-        min-width: 1200px;
-        min-height: 1200px;
-    }
-    
-    #slider{
-        position: absolute;
-        left: 50%;
-        margin-left: -600px;
-        top: 50%;
-        margin-top: -300px;
-    }
-    
-    #left{
-        min-height: 1200px;
-        padding-top: 100px;
-    }
-    #center{
-        min-height: 1200px;
-        padding-top: 200px;
-        
-    }
-    
-    #right{
-        min-height: 1200px;
-        padding-top: 100px;
-        
-    }
-    
-    .container {
-        min-height: 1200px;
-        background-color: white !important;
-    }
-    
-    .Wrcof, .Wrhom{
-        height: 85%;
-        width: 85%;
-        padding-bottom: 50px;
-    }
-    
-    #about {
-        height: 85%;
-        width: 85%;
-    }
-    
-    #contact {
-        height: 85%;
-        width: 85%;
-    }
+#hamburger.open span {
+  top: 43px;
+left: 43px;
+  height: 100px;
+  background-color: white;
+  margin: -1.875rem 0 0 -1.875rem;
+  border-width: 0.375rem;
+
+}
+
+#hamburger span:before,
+ #hamburger span:after {
+   content: '';
+ position: absolute;
+ left: -3px;
+ width: 100px;
+ height: 15px;
+ background: black;
+ border-radius: 0;
+ margin: -50 0 0 0rem;
+ transition: 0.3s;
+
+}
+
+#hamburger.open span:before,
+#hamburger.open span:after {
+  width: 100px;
+  margin: 0 0 0 0;
+  top: 40px;
+}
+
+#hamburger span:before {
+    top: 85px;
+}
+
+#hamburger.open span:before {
+  transform: rotate(-135deg);
+}
+
+#hamburger span:after {
+  top: 11px;
+}
+
+#hamburger.open span:after {
+  transform: rotate(135deg);
+}
+
+.icon-bar {
+
+}
+
+#center{
+  display: none;
+    top: 0;
+    margin-top: 60px;
+    position: fixed;
+    font-family: 'quicksand', sans-serif;
+    background-color: rgb(0, 0, 0);
+    height: auto;
+    width: 100vw;
+    left: 10px;
+    margin-left: 0;
+    margin: 14px, auto;
+    z-index: 4;
+    align-content: center;
+    padding-bottom: 20px;
+    min-height: 0px;
+}
+
+
+
+.navbar-header {
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    border: 4px solid black;
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    display: block;
+    z-index: 99;
+}
+
+
+.navbar-header span {
+  background-color:green;
+  position: relative;
+  height: 20px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.cr {
+  display: none;
+}
+
+
 }
