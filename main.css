@@ -291,6 +291,7 @@ position: absolute;
 }
 
 .Wrhom {
+  margin-top: -50px !important;
   z-index: 11;
 }
 .WrCof  {
@@ -395,6 +396,7 @@ p {
 }
 
 #right h3 {
+  margin-top: 10px;
     font-size: 16px;
     font-family: 'work sans';
     font-weight: 200;
@@ -592,6 +594,10 @@ left: 43px;
   height: 20px;
   width: 100px;
   margin-bottom: 20px;
+}
+
+.cr {
+  display: none;
 }
 
 
